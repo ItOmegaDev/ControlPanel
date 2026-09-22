@@ -1,0 +1,131 @@
+export type Language = 'uk' | 'en';
+
+export const TRANSLATIONS = {
+  uk: {
+    // Nav & General
+    app_title: 'ControlPanel',
+    app_tagline: 'Панель управління ігровими серверами нового покоління',
+    nav_servers: 'Сервери',
+    nav_scheduler: 'Планувальник нод',
+    nav_nodes: 'Вузли (Ноди)',
+    nav_marketplace: 'Eggs Маркетплейс',
+    nav_horizon: 'Черги Horizon',
+    nav_audit: 'Аудит-лог',
+    nav_security: 'Безпека & 2FA',
+    nav_multitenant: 'Реселери & Команди',
+    nav_billing: 'Білінг & Тарифи',
+    nav_api: 'API & Вебхуки',
+    nav_settings: 'White-label & Теми',
+    search_placeholder: 'Швидкий пошук (Cmd+K або Ctrl+K)...',
+    
+    // Statuses
+    status_running: 'Працює',
+    status_starting: 'Запускається',
+    status_stopping: 'Зупиняється',
+    status_offline: 'Вимкнено',
+    status_suspended: 'Призупинено',
+    status_online: 'Онлайн',
+    status_maintenance: 'Обслуговування',
+    
+    // Roles
+    role_superadmin: 'Суперадмін',
+    role_admin: 'Адміністратор',
+    role_reseller: 'Реселер',
+    role_user: 'Власник сервера',
+    role_team_member: 'Член команди',
+    
+    // Server Detail Tabs
+    tab_console: 'Консоль & Термінал',
+    tab_metrics: 'Живі метрики',
+    tab_files: 'Файловий менеджер',
+    tab_network: 'Мережа & Порти',
+    tab_backups: 'Резервні копії',
+    tab_snapshots: 'Снапшоти конфігурації',
+    tab_team: 'Командний доступ',
+    tab_settings: 'Налаштування & Ліміти',
+    
+    // Quick Actions
+    action_start: 'Запустити',
+    action_restart: 'Перезапустити',
+    action_stop: 'Зупинити',
+    action_kill: 'Примусово вбити',
+    action_new_server: 'Новий сервер',
+    action_new_node: 'Підключити ноду',
+    action_bulk_ops: 'Групові дії',
+    action_refresh: 'Оновити',
+    
+    // Core principles badges
+    badge_async: 'Async-first (Horizon)',
+    badge_rootless: 'Rootless за замовчуванням',
+    badge_net_iso: 'Мережева ізоляція',
+    badge_2fa_enforced: '2FA обов\'язкова',
+    
+    // Onboarding
+    onboarding_title: 'Вітаємо в ControlPanel!',
+    onboarding_desc: 'Давайте разом налаштуємо вашу першу інфраструктуру за 3 простих кроки.',
+    step_node: '1. Підключення ноди',
+    step_egg: '2. Вибір шаблону Egg',
+    step_server: '3. Розгортання сервера',
+    step_security: '4. Активація 2FA & Rootless',
+  },
+  en: {
+    app_title: 'ControlPanel',
+    app_tagline: 'Next-Generation Game Server Management Platform',
+    nav_servers: 'Servers',
+    nav_scheduler: 'Node Placement',
+    nav_nodes: 'Nodes & Health',
+    nav_marketplace: 'Eggs Marketplace',
+    nav_horizon: 'Horizon Queues',
+    nav_audit: 'Audit Log',
+    nav_security: 'Security & 2FA',
+    nav_multitenant: 'Resellers & Teams',
+    nav_billing: 'Billing & Plans',
+    nav_api: 'API & Webhooks',
+    nav_settings: 'White-label & Theme',
+    search_placeholder: 'Global search (Cmd+K or Ctrl+K)...',
+    
+    status_running: 'Running',
+    status_starting: 'Starting',
+    status_stopping: 'Stopping',
+    status_offline: 'Offline',
+    status_suspended: 'Suspended',
+    status_online: 'Online',
+    status_maintenance: 'Maintenance',
+    
+    role_superadmin: 'Superadmin',
+    role_admin: 'Admin',
+    role_reseller: 'Reseller',
+    role_user: 'Server Owner',
+    role_team_member: 'Team Member',
+    
+    tab_console: 'Console & Terminal',
+    tab_metrics: 'Live Metrics',
+    tab_files: 'File Manager',
+    tab_network: 'Network & Ports',
+    tab_backups: 'Backups',
+    tab_snapshots: 'Config Snapshots',
+    tab_team: 'Team Access',
+    tab_settings: 'Settings & Limits',
+    
+    action_start: 'Start',
+    action_restart: 'Restart',
+    action_stop: 'Stop',
+    action_kill: 'Kill Process',
+    action_new_server: 'New Server',
+    action_new_node: 'Connect Node',
+    action_bulk_ops: 'Bulk Actions',
+    action_refresh: 'Refresh',
+    
+    badge_async: 'Async-first (Horizon)',
+    badge_rootless: 'Rootless Default',
+    badge_net_iso: 'Network Isolated',
+    badge_2fa_enforced: '2FA Enforced',
+    
+    onboarding_title: 'Welcome to ControlPanel!',
+    onboarding_desc: 'Let\'s get your first infrastructure set up together in 3 quick steps.',
+    step_node: '1. Connect Node Agent',
+    step_egg: '2. Select Game Egg',
+    step_server: '3. Deploy Container Server',
+    step_security: '4. 2FA & Rootless Hardening',
+  },
+};

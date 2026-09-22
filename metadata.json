@@ -1,0 +1,6 @@
+{
+  "name": "ControlPanel — Game Server Management",
+  "description": "Сучасна панель управління ігровими серверами нового покоління (наступник Pterodactyl): асинхронні задачі, маркетплейс eggs, моніторинг нод, безпека за замовчуванням та мультитенантність.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
