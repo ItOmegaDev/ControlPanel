@@ -54,7 +54,7 @@ export const INITIAL_NODES: Node[] = [
     disk_total_gb: 4000,
     disk_used_gb: 1840,
     servers_count: 24,
-    agent_token: 'cpa_live_fra1_99x811b7zqa0',
+    agent_token: 'demo-agent-token',
     alert_thresholds: {
       disk_warn_percent: 85,
       cpu_warn_percent: 90,
@@ -83,7 +83,7 @@ export const INITIAL_NODES: Node[] = [
     disk_total_gb: 2000,
     disk_used_gb: 1220,
     servers_count: 14,
-    agent_token: 'cpa_live_waw2_84k271a3xpl1',
+    agent_token: 'demo-agent-token',
     alert_thresholds: {
       disk_warn_percent: 80,
       cpu_warn_percent: 85,
@@ -112,7 +112,7 @@ export const INITIAL_NODES: Node[] = [
     disk_total_gb: 8000,
     disk_used_gb: 3450,
     servers_count: 18,
-    agent_token: 'cpa_live_hel1_11c944f2zfl0',
+    agent_token: 'demo-agent-token',
     alert_thresholds: {
       disk_warn_percent: 90,
       cpu_warn_percent: 90,
@@ -141,7 +141,7 @@ export const INITIAL_NODES: Node[] = [
     disk_total_gb: 2000,
     disk_used_gb: 410,
     servers_count: 6,
-    agent_token: 'cpa_live_iad1_55p302b1xus9',
+    agent_token: 'demo-agent-token',
     alert_thresholds: {
       disk_warn_percent: 85,
       cpu_warn_percent: 85,
@@ -698,7 +698,7 @@ export const INITIAL_API_TOKENS: ApiToken[] = [
   {
     id: 'tok_01',
     name: 'CI/CD Automated Deployment',
-    token_prefix: 'cpt_live_9a781...',
+    token_prefix: 'demo-token-prefix',
     scopes: ['servers:read', 'servers:power', 'servers:files:write'],
     allowed_ips: ['194.26.29.0/24'],
     expires_at: '2026-12-31T23:59:59Z',
@@ -708,7 +708,7 @@ export const INITIAL_API_TOKENS: ApiToken[] = [
   {
     id: 'tok_02',
     name: 'Backup Auditor Scoped Token',
-    token_prefix: 'cpt_live_44b12...',
+    token_prefix: 'demo-token-prefix',
     scopes: ['servers:backup:read', 'servers:backup:create'],
     allowed_ips: ['*'],
     expires_at: '2026-06-30T23:59:59Z',
@@ -794,7 +794,7 @@ export const INITIAL_WEBHOOKS: WebhookEndpoint[] = [
     name: 'Discord Incident Notification Webhook',
     url: 'https://discord.com/api/webhooks/121884910283/aBcDeFgHiJkLmNoP',
     events: ['server.crashed', 'node.offline', 'backup.failed'],
-    secret: 'whsec_99481abf0192847118274619a9',
+    secret: 'demo-webhook-secret',
     active: true,
     last_delivery_status: '200 OK',
     last_delivery_time: '2026-03-22T16:02:12Z',
@@ -804,7 +804,7 @@ export const INITIAL_WEBHOOKS: WebhookEndpoint[] = [
     name: 'Billing WHMCS Webhook Sync',
     url: 'https://billing.apexcloud.eu/modules/servers/controlpanel/callback.php',
     events: ['server.created', 'server.suspended', 'server.unsuspended'],
-    secret: 'whsec_229188471bccaaeef881920394',
+    secret: 'demo-webhook-secret',
     active: true,
     last_delivery_status: '200 OK',
     last_delivery_time: '2026-03-22T17:15:35Z',
